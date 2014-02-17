@@ -56,7 +56,7 @@ JBPM 6 - KIE As A JEE Application Demo
 
         cd jbpm-ejb-example-app
         cd deploy
-        pushEar localhost 
+        pushEar.sh localhost 
 
    Running Instructions
 
@@ -69,8 +69,8 @@ JBPM 6 - KIE As A JEE Application Demo
          cd jbpm-ejb-example-app/bin
 
          demo-start-day.sh WorkDay 1.0.0 2014-02-12
-            --> deploys the WorkDay KIE Jar for work day 2014-02-13. The output of the command will show an 
-                assigned ID number for the deployment, eg. 1
+            --> deploys the WorkDay KIE Jar for work day 2014-02-13. The output of the command
+                will show an assigned ID number for the deployment, eg. 1
 
          demo-show-depoyments.sh 
             --> will report all current deployed days
@@ -79,7 +79,8 @@ JBPM 6 - KIE As A JEE Application Demo
             --> starts process WorkDay.SimpleWorkProcess for Work Day 1 (2014-02-13)
 
          demo-show-process-status.sh 1 WorkDay.SimpleWorkProcess true 
-            --> reports the detailed node traversal history for each touched node in WorkDay.SimpleWorkProcess
+            --> reports the detailed node traversal history for each touched node 
+                in WorkDay.SimpleWorkProcess
 
          demo-show-deployment-facts.sh 1 
             --> dumps the current session agenda for Work Day 1 (2014-02-13)
