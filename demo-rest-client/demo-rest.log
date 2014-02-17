@@ -1,0 +1,695 @@
+18:23:55,467 ERROR [com.demo.bpm.rest.client.DemoServiceClient] java.lang.RuntimeException: expected 3 args: artifactId version workDate
+18:24:42,442 ERROR [com.demo.bpm.rest.client.DemoServiceClient] java.lang.RuntimeException: Unknown error : 403
+18:31:22,563 ERROR [com.demo.bpm.rest.client.DemoServiceClient] java.lang.RuntimeException: Unknown error : 403
+18:32:16,938 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<demoDeployment>
+    <deployIdentifier>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-15]</deployIdentifier>
+    <artifactId>WorkDay</artifactId>
+    <version>1.0.0</version>
+    <workDay>
+        <id>1</id>
+        <name>2014-02-15</name>
+        <date>2014-02-15T00:00:00-05:00</date>
+        <systemEndTime>2014-02-15T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-15T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <id>1</id>
+</demoDeployment>
+
+10:39:01,827 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployments>
+    <demoDeployment>
+        <deployIdentifier>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-15]</deployIdentifier>
+        <artifactId>WorkDay</artifactId>
+        <version>1.0.0</version>
+        <workDay>
+            <id>1</id>
+            <name>2014-02-15</name>
+            <date>2014-02-15T00:00:00-05:00</date>
+            <systemEndTime>2014-02-15T04:00:00-05:00</systemEndTime>
+            <systemStartTime>2014-02-15T09:30:00-05:00</systemStartTime>
+        </workDay>
+        <id>1</id>
+        <processes/>
+    </demoDeployment>
+</deployments>
+
+11:08:22,908 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<demoDeployment>
+    <deployIdentifier>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-15]</deployIdentifier>
+    <artifactId>WorkDay</artifactId>
+    <version>1.0.0</version>
+    <workDay>
+        <id>1</id>
+        <name>2014-02-15</name>
+        <date>2014-02-15T00:00:00-05:00</date>
+        <systemEndTime>2014-02-15T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-15T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <id>1</id>
+</demoDeployment>
+
+11:10:24,144 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<demoDeployment>
+    <deployIdentifier>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-15]</deployIdentifier>
+    <artifactId>WorkDay</artifactId>
+    <version>1.0.0</version>
+    <workDay>
+        <id>1</id>
+        <name>2014-02-15</name>
+        <date>2014-02-15T00:00:00-05:00</date>
+        <systemEndTime>2014-02-15T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-15T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <id>1</id>
+</demoDeployment>
+
+11:11:11,114 ERROR [com.demo.bpm.rest.client.DemoServiceClient] java.lang.RuntimeException: expected 2 args: processId deploymentId
+11:11:29,042 ERROR [com.demo.bpm.rest.client.DemoServiceClient] com.demo.bpm.rest.client.ErrorResponseException: Unknown error : org.jbpm.workflow.instance.WorkflowRuntimeException: [WorkDay.SimpleWorkProcess:1 - Simple Work:2] -- null
+11:12:56,851 ERROR [com.demo.bpm.rest.client.DemoServiceClient] com.demo.bpm.rest.client.ErrorResponseException: Unknown error : org.jbpm.workflow.instance.WorkflowRuntimeException: [WorkDay.SimpleWorkProcess:2 - Simple Work:2] -- null
+11:14:56,305 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<demoDeployment>
+    <deployIdentifier>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-15]</deployIdentifier>
+    <artifactId>WorkDay</artifactId>
+    <version>1.0.0</version>
+    <workDay>
+        <id>1</id>
+        <name>2014-02-15</name>
+        <date>2014-02-15T00:00:00-05:00</date>
+        <systemEndTime>2014-02-15T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-15T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <id>1</id>
+</demoDeployment>
+
+11:15:10,621 ERROR [com.demo.bpm.rest.client.DemoServiceClient] com.demo.bpm.rest.client.ErrorResponseException: Unknown error : org.jbpm.workflow.instance.WorkflowRuntimeException: [WorkDay.SimpleWorkProcess:1 - Simple Work:2] -- null
+11:16:46,720 ERROR [com.demo.bpm.rest.client.DemoServiceClient] com.demo.bpm.rest.client.ErrorResponseException: Unknown error : org.jbpm.workflow.instance.WorkflowRuntimeException: [WorkDay.SimpleWorkProcess:2 - Simple Work:2] -- null
+11:26:46,585 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<demoProcessInvocation>
+    <id>3</id>
+    <kieInstanceId>3</kieInstanceId>
+    <kieProcessDescriptionId>WorkDay.SimpleWorkProcess</kieProcessDescriptionId>
+    <startTime>2014-02-17T11:26:27.883-05:00</startTime>
+</demoProcessInvocation>
+
+11:27:32,473 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployments>
+    <demoDeployment>
+        <deployIdentifier>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-15]</deployIdentifier>
+        <artifactId>WorkDay</artifactId>
+        <version>1.0.0</version>
+        <workDay>
+            <id>1</id>
+            <name>2014-02-15</name>
+            <date>2014-02-15T00:00:00-05:00</date>
+            <systemEndTime>2014-02-15T04:00:00-05:00</systemEndTime>
+            <systemStartTime>2014-02-15T09:30:00-05:00</systemStartTime>
+        </workDay>
+        <id>1</id>
+        <processes>
+            <process>
+                <id>1</id>
+                <kieInstanceId>1</kieInstanceId>
+                <kieProcessDescriptionId>WorkDay.SimpleWorkProcess</kieProcessDescriptionId>
+                <startTime>2014-02-17T11:15:10.368-05:00</startTime>
+            </process>
+            <process>
+                <id>2</id>
+                <kieInstanceId>2</kieInstanceId>
+                <kieProcessDescriptionId>WorkDay.SimpleWorkProcess</kieProcessDescriptionId>
+                <startTime>2014-02-17T11:16:23.678-05:00</startTime>
+            </process>
+            <process>
+                <id>3</id>
+                <kieInstanceId>3</kieInstanceId>
+                <kieProcessDescriptionId>WorkDay.SimpleWorkProcess</kieProcessDescriptionId>
+                <startTime>2014-02-17T11:26:27.883-05:00</startTime>
+            </process>
+        </processes>
+    </demoDeployment>
+</deployments>
+
+11:28:00,151 ERROR [com.demo.bpm.rest.client.DemoServiceClient] java.lang.RuntimeException: expected 3 args: deploymentId processId [true|false] where you use true to get full process execution history
+11:28:18,440 ERROR [com.demo.bpm.rest.client.DemoServiceClient] com.demo.bpm.rest.client.ErrorResponseException: Unknown error : java.lang.NullPointerException
+11:31:19,352 ERROR [com.demo.bpm.rest.client.DemoServiceClient] com.demo.bpm.rest.client.ErrorResponseException: Unknown error : java.lang.NullPointerException
+11:34:05,576 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployment>
+    <id>1</id>
+    <workDay>
+        <id>1</id>
+        <name>2014-02-15</name>
+        <date>2014-02-15T00:00:00-05:00</date>
+        <systemEndTime>2014-02-15T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-15T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <processes>
+        <process>
+            <processId>WorkDay.SimpleWorkProcess</processId>
+            <executions>
+                <run>
+                    <id>3</id>
+                    <state>completed</state>
+                    <timestamp>2014-02-17T11:26:27.944-05:00</timestamp>
+                    <nodes>
+                        <node>
+                            <state>started</state>
+                            <id>0</id>
+                            <nodeId>processStartEvent</nodeId>
+                            <nodeType>StartNode</nodeType>
+                            <nodeName>Start</nodeName>
+                            <dataTimeStamp>2014-02-17T11:26:27.950-05:00</dataTimeStamp>
+                        </node>
+                        <node>
+                            <state>started</state>
+                            <id>1</id>
+                            <nodeId>_86CE4321-B286-40C1-8944-AA0B3E5499B0</nodeId>
+                            <nodeType>WorkItemNode</nodeType>
+                            <nodeName>Simple Work</nodeName>
+                            <dataTimeStamp>2014-02-17T11:26:27.952-05:00</dataTimeStamp>
+                        </node>
+                        <node>
+                            <state>complete</state>
+                            <id>0</id>
+                            <nodeId>processStartEvent</nodeId>
+                            <nodeType>StartNode</nodeType>
+                            <nodeName>Start</nodeName>
+                            <dataTimeStamp>2014-02-17T11:26:46.467-05:00</dataTimeStamp>
+                        </node>
+                        <node>
+                            <state>started</state>
+                            <id>2</id>
+                            <nodeId>_ACD8B25D-1644-4887-9ED0-4D75A6EE4E5E</nodeId>
+                            <nodeType>EndNode</nodeType>
+                            <nodeName>End</nodeName>
+                            <dataTimeStamp>2014-02-17T11:26:48.480-05:00</dataTimeStamp>
+                        </node>
+                        <node>
+                            <state>complete</state>
+                            <id>2</id>
+                            <nodeId>_ACD8B25D-1644-4887-9ED0-4D75A6EE4E5E</nodeId>
+                            <nodeType>EndNode</nodeType>
+                            <nodeName>End</nodeName>
+                            <dataTimeStamp>2014-02-17T11:26:48.494-05:00</dataTimeStamp>
+                        </node>
+                        <node>
+                            <state>complete</state>
+                            <id>1</id>
+                            <nodeId>_86CE4321-B286-40C1-8944-AA0B3E5499B0</nodeId>
+                            <nodeType>WorkItemNode</nodeType>
+                            <nodeName>Simple Work</nodeName>
+                            <dataTimeStamp>2014-02-17T11:26:48.495-05:00</dataTimeStamp>
+                        </node>
+                    </nodes>
+                </run>
+            </executions>
+        </process>
+    </processes>
+    <deploymentId>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-15]</deploymentId>
+</deployment>
+
+11:54:39,736 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<demoProcessInvocation>
+    <id>4</id>
+    <kieInstanceId>4</kieInstanceId>
+    <kieProcessDescriptionId>WorkDay.SimpleWorkProcess</kieProcessDescriptionId>
+    <startTime>2014-02-17T11:54:39.543-05:00</startTime>
+</demoProcessInvocation>
+
+11:59:07,727 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<demoDeployment>
+    <deployIdentifier>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-15]</deployIdentifier>
+    <artifactId>WorkDay</artifactId>
+    <version>1.0.0</version>
+    <workDay>
+        <id>1</id>
+        <name>2014-02-15</name>
+        <date>2014-02-15T00:00:00-05:00</date>
+        <systemEndTime>2014-02-15T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-15T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <id>1</id>
+</demoDeployment>
+
+12:03:33,489 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<demoProcessInvocation>
+    <id>1</id>
+    <kieInstanceId>1</kieInstanceId>
+    <kieProcessDescriptionId>WorkDay.SimpleWorkProcess</kieProcessDescriptionId>
+    <startTime>2014-02-17T12:03:01.131-05:00</startTime>
+</demoProcessInvocation>
+
+12:05:00,790 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<demoProcessInvocation>
+    <id>2</id>
+    <kieInstanceId>2</kieInstanceId>
+    <kieProcessDescriptionId>WorkDay.SimpleWorkProcess</kieProcessDescriptionId>
+    <startTime>2014-02-17T12:05:00.699-05:00</startTime>
+</demoProcessInvocation>
+
+12:05:45,410 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<demoProcessInvocation>
+    <id>3</id>
+    <kieInstanceId>3</kieInstanceId>
+    <kieProcessDescriptionId>WorkDay.SimpleWorkProcess</kieProcessDescriptionId>
+    <startTime>2014-02-17T12:05:45.153-05:00</startTime>
+</demoProcessInvocation>
+
+12:11:01,148 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<demoProcessInvocation>
+    <id>4</id>
+    <kieInstanceId>4</kieInstanceId>
+    <kieProcessDescriptionId>WorkDay.SimpleWorkProcess</kieProcessDescriptionId>
+    <startTime>2014-02-17T12:11:00.961-05:00</startTime>
+</demoProcessInvocation>
+
+12:12:09,715 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<demoDeployment>
+    <deployIdentifier>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-15]</deployIdentifier>
+    <artifactId>WorkDay</artifactId>
+    <version>1.0.0</version>
+    <workDay>
+        <id>1</id>
+        <name>2014-02-15</name>
+        <date>2014-02-15T00:00:00-05:00</date>
+        <systemEndTime>2014-02-15T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-15T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <id>1</id>
+</demoDeployment>
+
+12:12:36,198 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<demoProcessInvocation>
+    <id>1</id>
+    <kieInstanceId>1</kieInstanceId>
+    <kieProcessDescriptionId>WorkDay.SimpleWorkProcess</kieProcessDescriptionId>
+    <startTime>2014-02-17T12:12:35.941-05:00</startTime>
+</demoProcessInvocation>
+
+12:12:55,522 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployment>
+    <id>1</id>
+    <workDay>
+        <id>1</id>
+        <name>2014-02-15</name>
+        <date>2014-02-15T00:00:00-05:00</date>
+        <systemEndTime>2014-02-15T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-15T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <processes>
+        <process>
+            <processId>WorkDay.SimpleWorkProcess</processId>
+            <executions>
+                <run>
+                    <id>1</id>
+                    <state>completed</state>
+                    <timestamp>2014-02-17T12:12:36.023-05:00</timestamp>
+                    <nodes>
+                        <node>
+                            <state>started</state>
+                            <id>0</id>
+                            <nodeId>processStartEvent</nodeId>
+                            <nodeType>StartNode</nodeType>
+                            <nodeName>Start</nodeName>
+                            <dataTimeStamp>2014-02-17T12:12:36.033-05:00</dataTimeStamp>
+                        </node>
+                        <node>
+                            <state>started</state>
+                            <id>1</id>
+                            <nodeId>_86CE4321-B286-40C1-8944-AA0B3E5499B0</nodeId>
+                            <nodeType>WorkItemNode</nodeType>
+                            <nodeName>Simple Work</nodeName>
+                            <dataTimeStamp>2014-02-17T12:12:36.040-05:00</dataTimeStamp>
+                        </node>
+                        <node>
+                            <state>complete</state>
+                            <id>0</id>
+                            <nodeId>processStartEvent</nodeId>
+                            <nodeType>StartNode</nodeType>
+                            <nodeName>Start</nodeName>
+                            <dataTimeStamp>2014-02-17T12:12:36.056-05:00</dataTimeStamp>
+                        </node>
+                        <node>
+                            <state>started</state>
+                            <id>2</id>
+                            <nodeId>_ACD8B25D-1644-4887-9ED0-4D75A6EE4E5E</nodeId>
+                            <nodeType>EndNode</nodeType>
+                            <nodeName>End</nodeName>
+                            <dataTimeStamp>2014-02-17T12:12:38.072-05:00</dataTimeStamp>
+                        </node>
+                        <node>
+                            <state>complete</state>
+                            <id>2</id>
+                            <nodeId>_ACD8B25D-1644-4887-9ED0-4D75A6EE4E5E</nodeId>
+                            <nodeType>EndNode</nodeType>
+                            <nodeName>End</nodeName>
+                            <dataTimeStamp>2014-02-17T12:12:38.105-05:00</dataTimeStamp>
+                        </node>
+                        <node>
+                            <state>complete</state>
+                            <id>1</id>
+                            <nodeId>_86CE4321-B286-40C1-8944-AA0B3E5499B0</nodeId>
+                            <nodeType>WorkItemNode</nodeType>
+                            <nodeName>Simple Work</nodeName>
+                            <dataTimeStamp>2014-02-17T12:12:38.108-05:00</dataTimeStamp>
+                        </node>
+                    </nodes>
+                </run>
+            </executions>
+        </process>
+    </processes>
+    <deploymentId>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-15]</deploymentId>
+</deployment>
+
+12:13:02,246 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployment>
+    <id>1</id>
+    <workDay>
+        <id>1</id>
+        <name>2014-02-15</name>
+        <date>2014-02-15T00:00:00-05:00</date>
+        <systemEndTime>2014-02-15T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-15T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <processes>
+        <process>
+            <processId>WorkDay.SimpleWorkProcess</processId>
+            <executions>
+                <run>
+                    <id>1</id>
+                    <state>completed</state>
+                    <timestamp>2014-02-17T12:12:36.023-05:00</timestamp>
+                    <nodes/>
+                </run>
+            </executions>
+        </process>
+    </processes>
+    <deploymentId>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-15]</deploymentId>
+</deployment>
+
+12:13:38,970 ERROR [com.demo.bpm.rest.client.DemoServiceClient] java.lang.RuntimeException: expected 1 args: deploymentId
+12:13:42,767 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deploymentFacts>
+    <demoDeploymentId>1</demoDeploymentId>
+    <factList>
+        <fact>WorkDay[2014-02-15]</fact>
+        <fact>We did some work on thread DemoWorkItemWorkerThread-1(id=1,type=WorkDone){name='We did some work on thread DemoWorkItemWorkerThread-1'doneTime='Mon Feb 17 12:12:38 EST 2014'}</fact>
+    </factList>
+</deploymentFacts>
+
+12:15:22,074 ERROR [com.demo.bpm.rest.client.DemoServiceClient] java.lang.RuntimeException: expected 1 args: deploymentId
+12:15:25,682 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+true
+12:15:43,335 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<demoDeployment>
+    <deployIdentifier>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-16]</deployIdentifier>
+    <artifactId>WorkDay</artifactId>
+    <version>1.0.0</version>
+    <workDay>
+        <id>2</id>
+        <name>2014-02-16</name>
+        <date>2014-02-16T00:00:00-05:00</date>
+        <systemEndTime>2014-02-16T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-16T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <id>2</id>
+</demoDeployment>
+
+12:15:54,588 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deploymentFacts>
+    <demoDeploymentId>2</demoDeploymentId>
+    <factList>
+        <fact>WorkDay[2014-02-16]</fact>
+    </factList>
+</deploymentFacts>
+
+12:16:09,943 ERROR [com.demo.bpm.rest.client.DemoServiceClient] com.demo.bpm.rest.client.ErrorResponseException: Unknown error : DemoDeployment not found with Id: 1
+12:16:20,355 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployment>
+    <id>2</id>
+    <workDay>
+        <id>2</id>
+        <name>2014-02-16</name>
+        <date>2014-02-16T00:00:00-05:00</date>
+        <systemEndTime>2014-02-16T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-16T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <processes>
+        <process>
+            <processId>WorkDay.SimpleWorkProcess</processId>
+            <executions>
+                <run>
+                    <id>1</id>
+                    <state>completed</state>
+                    <timestamp>2014-02-17T12:12:36.023-05:00</timestamp>
+                    <nodes/>
+                </run>
+            </executions>
+        </process>
+    </processes>
+    <deploymentId>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-16]</deploymentId>
+</deployment>
+
+12:16:58,167 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+true
+12:17:12,221 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<demoDeployment>
+    <deployIdentifier>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-17]</deployIdentifier>
+    <artifactId>WorkDay</artifactId>
+    <version>1.0.0</version>
+    <workDay>
+        <id>3</id>
+        <name>2014-02-17</name>
+        <date>2014-02-17T00:00:00-05:00</date>
+        <systemEndTime>2014-02-17T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-17T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <id>3</id>
+</demoDeployment>
+
+12:17:24,672 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployment>
+    <id>3</id>
+    <workDay>
+        <id>3</id>
+        <name>2014-02-17</name>
+        <date>2014-02-17T00:00:00-05:00</date>
+        <systemEndTime>2014-02-17T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-17T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <processes>
+        <process>
+            <processId>WorkDay.SimpleWorkProcess</processId>
+            <executions>
+                <run>
+                    <id>1</id>
+                    <state>completed</state>
+                    <timestamp>2014-02-17T12:12:36.023-05:00</timestamp>
+                    <nodes/>
+                </run>
+            </executions>
+        </process>
+    </processes>
+    <deploymentId>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-17]</deploymentId>
+</deployment>
+
+12:20:05,306 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployment>
+    <id>3</id>
+    <workDay>
+        <id>3</id>
+        <name>2014-02-17</name>
+        <date>2014-02-17T00:00:00-05:00</date>
+        <systemEndTime>2014-02-17T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-17T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <processes>
+        <process>
+            <processId>WorkDay.SimpleWorkProcess</processId>
+            <executions>
+                <run>
+                    <id>1</id>
+                    <state>completed</state>
+                    <timestamp>2014-02-17T12:12:36.023-05:00</timestamp>
+                    <nodes/>
+                </run>
+            </executions>
+        </process>
+    </processes>
+    <deploymentId>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-17]</deploymentId>
+</deployment>
+
+12:23:44,827 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployment>
+    <id>3</id>
+    <workDay>
+        <id>3</id>
+        <name>2014-02-17</name>
+        <date>2014-02-17T00:00:00-05:00</date>
+        <systemEndTime>2014-02-17T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-17T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <processes>
+        <process>
+            <processId>WorkDay.SimpleWorkProcess</processId>
+            <executions>
+                <run>
+                    <id>1</id>
+                    <state>completed</state>
+                    <timestamp>2014-02-17T12:12:36.023-05:00</timestamp>
+                    <nodes/>
+                </run>
+            </executions>
+        </process>
+    </processes>
+    <deploymentId>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-17]</deploymentId>
+</deployment>
+
+12:27:58,091 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployment>
+    <id>3</id>
+    <workDay>
+        <id>3</id>
+        <name>2014-02-17</name>
+        <date>2014-02-17T00:00:00-05:00</date>
+        <systemEndTime>2014-02-17T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-17T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <processes>
+        <process>
+            <processId>WorkDay.SimpleWorkProcess</processId>
+            <executions/>
+        </process>
+    </processes>
+    <deploymentId>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-17]</deploymentId>
+</deployment>
+
+12:28:08,513 ERROR [com.demo.bpm.rest.client.DemoServiceClient] com.demo.bpm.rest.client.ErrorResponseException: Unknown error : DemoDeployment not found with Id: 1
+12:37:07,756 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<demoDeployment>
+    <deployIdentifier>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-17]</deployIdentifier>
+    <artifactId>WorkDay</artifactId>
+    <version>1.0.0</version>
+    <workDay>
+        <id>1</id>
+        <name>2014-02-17</name>
+        <date>2014-02-17T00:00:00-05:00</date>
+        <systemEndTime>2014-02-17T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-17T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <id>1</id>
+    <active>true</active>
+</demoDeployment>
+
+12:38:36,169 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<demoProcessInvocation>
+    <id>1</id>
+    <kieInstanceId>1</kieInstanceId>
+    <kieProcessDescriptionId>WorkDay.SimpleWorkProcess</kieProcessDescriptionId>
+    <startTime>2014-02-17T12:38:35.915-05:00</startTime>
+</demoProcessInvocation>
+
+12:38:43,540 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+true
+12:38:53,299 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<demoDeployment>
+    <deployIdentifier>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-18]</deployIdentifier>
+    <artifactId>WorkDay</artifactId>
+    <version>1.0.0</version>
+    <workDay>
+        <id>2</id>
+        <name>2014-02-18</name>
+        <date>2014-02-18T00:00:00-05:00</date>
+        <systemEndTime>2014-02-18T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-18T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <id>2</id>
+    <active>true</active>
+</demoDeployment>
+
+12:39:31,181 ERROR [com.demo.bpm.rest.client.DemoServiceClient] com.demo.bpm.rest.client.ErrorResponseException: Unknown error : java.lang.RuntimeException: Cannot find process with process id of WorkDay.SimpleWorkProcess
+12:40:08,916 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployment>
+    <id>2</id>
+    <workDay>
+        <id>2</id>
+        <name>2014-02-18</name>
+        <date>2014-02-18T00:00:00-05:00</date>
+        <systemEndTime>2014-02-18T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-18T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <processes>
+        <process>
+            <processId>WorkDay.SimpleWorkProcess</processId>
+            <executions/>
+        </process>
+    </processes>
+    <deploymentId>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-18]</deploymentId>
+</deployment>
+
+12:42:34,141 ERROR [com.demo.bpm.rest.client.DemoServiceClient] java.lang.RuntimeException: expected 2 args: deploymentId true|false where you use true to get full process execution history
+12:42:39,151 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployment>
+    <id>1</id>
+    <workDay>
+        <id>1</id>
+        <name>2014-02-17</name>
+        <date>2014-02-17T00:00:00-05:00</date>
+        <systemEndTime>2014-02-17T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-17T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <processes/>
+    <deploymentId>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-17]</deploymentId>
+</deployment>
+
+12:42:56,186 INFO  [com.demo.bpm.rest.client.DemoServiceClient] Result: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployment>
+    <id>2</id>
+    <workDay>
+        <id>2</id>
+        <name>2014-02-18</name>
+        <date>2014-02-18T00:00:00-05:00</date>
+        <systemEndTime>2014-02-18T04:00:00-05:00</systemEndTime>
+        <systemStartTime>2014-02-18T09:30:00-05:00</systemStartTime>
+    </workDay>
+    <processes>
+        <process>
+            <processId>WorkDay.SimpleWorkProcess</processId>
+            <executions/>
+        </process>
+    </processes>
+    <deploymentId>demo-ejb-rest:WorkDay:1.0.0:WorkDay[2014-02-18]</deploymentId>
+</deployment>
+

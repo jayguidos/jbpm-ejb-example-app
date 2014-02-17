@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo-domain/demo-domain.iml" filepath="$PROJECT_DIR$/demo-domain/demo-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-jee-app/demo-jee-app.iml" filepath="$PROJECT_DIR$/demo-jee-app/demo-jee-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-jee-app/demo-jee-app-ear/demo-jee-app-ear.iml" filepath="$PROJECT_DIR$/demo-jee-app/demo-jee-app-ear/demo-jee-app-ear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-jee-app/demo-jee-app-ejb/demo-jee-app-ejb.iml" filepath="$PROJECT_DIR$/demo-jee-app/demo-jee-app-ejb/demo-jee-app-ejb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-jee-app/demo-jee-app-ejb-api/demo-jee-app-ejb-api.iml" filepath="$PROJECT_DIR$/demo-jee-app/demo-jee-app-ejb-api/demo-jee-app-ejb-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-jee-app/demo-jee-app-web/demo-jee-app-web.iml" filepath="$PROJECT_DIR$/demo-jee-app/demo-jee-app-web/demo-jee-app-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-jee-app/demo-jee-app-web-api/demo-jee-app-web-api.iml" filepath="$PROJECT_DIR$/demo-jee-app/demo-jee-app-web-api/demo-jee-app-web-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-rest-client/demo-rest-client.iml" filepath="$PROJECT_DIR$/demo-rest-client/demo-rest-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-work-handlers/demo-work-handlers.iml" filepath="$PROJECT_DIR$/demo-work-handlers/demo-work-handlers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jbpm-ejb-example-app.iml" filepath="$PROJECT_DIR$/jbpm-ejb-example-app.iml" />
+    </modules>
+  </component>
+</project>
+

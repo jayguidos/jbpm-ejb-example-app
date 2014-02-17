@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3481457857">
+    <data-source source="LOCAL" name="JBPM - JBOSS 7.1 H2" uuid="fe9ac9df-f53b-4ac7-9620-491ac016d30d">
+      <driver-ref>h2.embedded</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:$USER_HOME$/jbpm.h2.db</jdbc-url>
+      <user-name>sa</user-name>
+      <schema-pattern>JBPM.H2.DB.*</schema-pattern>
+      <libraries>
+        <library>
+          <url>file://$PROJECT_DIR$/../jbpm-installer-6/jboss-as-7.1.1.Final/modules/com/h2database/h2/main/h2-1.3.161.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+

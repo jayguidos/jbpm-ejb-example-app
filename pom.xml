@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>Demo Daily Operations</name>
+    <groupId>demo-jbpm</groupId>
+    <artifactId>demo-jbpm-all</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+
+        <!--POM Happiness-->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!--My Versions-->
+        <demo-domain.version>1.0.0</demo-domain.version>
+        <demo-work-handlers.version>1.0.0-SNAPSHOT</demo-work-handlers.version>
+        <demo-jee-app.version>1.0.0-SNAPSHOT</demo-jee-app.version>
+
+        <!--Drools and jBPM-->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <drools.version>6.0.1.Final</drools.version>
+        <jbpm.version>6.0.1.Final</jbpm.version>
+        <arquillian.bom.version>1.1.0.Final</arquillian.bom.version>
+        <arquillian.weld.version>1.0.0.CR3</arquillian.weld.version>
+        <jboss.javaee.version>1.0.0.Final</jboss.javaee.version>
+        <hibernate.version>4.2.0.Final</hibernate.version>
+        <hibernate.core.version>4.2.0.Final</hibernate.core.version>
+        <slf4j.version>1.6.4</slf4j.version>
+
+        <!--JBoss-->
+        <resteasy.version>2.3.6.Final</resteasy.version>
+
+    </properties>
+
+    <modules>
+        <module>demo-domain</module>
+        <module>demo-work-handlers</module>
+        <module>demo-jee-app</module>
+        <module>demo-rest-client</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <encoding>${project.build.sourceEncoding</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>2.7</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!--These are mine -->
+            <dependency>
+                <groupId>demo-jbpm</groupId>
+                <artifactId>demo-domain</artifactId>
+                <version>${demo-domain.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>demo-jbpm</groupId>
+                <artifactId>demo-work-handlers</artifactId>
+                <version>${demo-work-handlers.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>1.2.16</version>
+            </dependency>
+
+            <!--These BOMs are to select proper versions of JBPM jars -->
+            <dependency>
+                <groupId>org.drools</groupId>
+                <artifactId>drools-bom</artifactId>
+                <type>pom</type>
+                <version>${drools.version}</version>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jbpm</groupId>
+                <artifactId>jbpm-bom</artifactId>
+                <type>pom</type>
+                <version>${jbpm.version}</version>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian</groupId>
+                <artifactId>arquillian-bom</artifactId>
+                <version>${arquillian.bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <repositories>
+
+        <!--JBPM (and all other JBoss) jars-->
+        <repository>
+            <id>jboss-public-repository-group</id>
+            <name>JBoss Public Repository Group</name>
+            <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <updatePolicy>daily</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+
+</project>

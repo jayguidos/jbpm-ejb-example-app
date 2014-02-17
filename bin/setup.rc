@@ -1,0 +1,39 @@
+[ -z "$BPM_BIN_HOME" ] && export BPM_BIN_HOME="$( cd `dirname $0`; pwd )"
+[ -z "$BPM_REST_CLIENT_HOME" ] && export BPM_REST_CLIENT_HOME="$( cd `dirname $0`/../demo-rest-client; pwd )"
+[ -z "$BPM_REST_HOST" ] && export BPM_REST_HOST="localhost"
+[ -z "$BPM_JAVA_CMD" ] && [ -z "$JAVA_HOME" ] && echo "BPM_JAVA_CMD not set.  Set it explicitly, or set JAVA_HOME" >&2 && exit 1
+[ -z "$BPM_JAVA_CMD" ] && export BPM_JAVA_CMD="$JAVA_HOME/bin/java"
+
+function buildClassPath()
+{
+    [ -e /tmp/bpm-rest-client-classpath.txt ] && cat /tmp/bpm-rest-client-classpath.txt && return
+    cd $BPM_REST_CLIENT_HOME
+    mvn dependency:build-classpath -Dmdep.outputFile=/tmp/bpm-rest-client-classpath.txt -Dsilent=true
+
+}
+
+function getDefaultPassword()
+{
+    local username="$1"
+    [ -e "$BPM_BIN_HOME/users.properties" ] && grep $username $BPM_BIN_HOME/users.properties | cut -f2 -d=
+}
+
+function runRestCmd()
+{
+    local username="$1"
+    local password="$2"
+    local cmd="$3"
+    shift 3
+
+    [ -z "$password" ] && password="`getDefaultPassword $username`"
+
+    (
+        cd $BPM_REST_CLIENT_HOME
+        export CLASSPATH="$BPM_REST_CLIENT_HOME/target/classes:`buildClassPath`"
+        $BPM_JAVA_CMD                                       \
+                -Ddemo.jbpm.rest.host=$BPM_REST_HOST        \
+                -Ddemo.jbpm.rest.username=$username         \
+                -Ddemo.jbpm.rest.password=$password         \
+        com.demo.bpm.rest.client.DemoServiceClient $cmd $*
+    )
+}

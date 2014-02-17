@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_2_0.xsd"
+                 version="2.0">
+
+    <description>External entities from demo-domain</description>
+
+    <!--Allow WorkDay to be stored in a JPA persistence unit-->
+
+    <entity class="com.demo.bpm.facts.model.AbstractFact" metadata-complete="true">
+        <attributes>
+            <id name="id">
+                <column name="FACT_ID"/>
+                <generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.demo.bpm.facts.model.WorkDay" metadata-complete="true">
+        <table name="WORK_DAY">
+            <unique-constraint>
+                <column-name>WORK_DATE_VAL</column-name>
+            </unique-constraint>
+        </table>
+        <attributes>
+            <basic name="date">
+                <!--The default column name is an oracle keyword so change it-->
+                <column name="WORK_DATE_VAL"/>
+            </basic>
+        </attributes>
+    </entity>
+
+ </entity-mappings>

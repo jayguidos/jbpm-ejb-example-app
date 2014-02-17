@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ear" name="demo-jee-app-ear:ear">
+    <output-path>$PROJECT_DIR$/demo-jee-app/demo-jee-app-ear/target</output-path>
+    <root id="archive" name="demo-jee-app.ear">
+      <element id="artifact" artifact-name="demo-jee-app-ear:ear exploded" />
+    </root>
+  </artifact>
+</component>

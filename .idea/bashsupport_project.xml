@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BashSupportProjectSettings">
+    <option name="globalVariables">
+      <set>
+        <option value="BPM_DEPLOY_HOME" />
+        <option value="BPM_DEPLOY_HOST" />
+        <option value="BPM_JAVA_CMD" />
+        <option value="BPM_PROJECT_HOME" />
+      </set>
+    </option>
+  </component>
+</project>
+

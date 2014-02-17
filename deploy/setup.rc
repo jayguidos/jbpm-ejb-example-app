@@ -1,0 +1,12 @@
+[ -z "$BPM_PROJECT_HOME" ] && export BPM_PROJECT_HOME="$( cd `dirname $0`/..; pwd )"
+[ -z "$BPM_EAR_PROJECT_HOME" ] && export BPM_EAR_PROJECT_HOME="$( cd $BPM_PROJECT_HOME/demo-jee-app; pwd )"
+[ -z "$BPM_DEPLOY_HOME" ] && export BPM_DEPLOY_HOME="$( cd `dirname $0`; pwd )"
+[ -z "$BPM_DEPLOY_HOST" ] && export BPM_DEPLOY_HOST="localhost"
+[ -z "$BPM_JAVA_CMD" ] && [ -z "$JAVA_HOME" ] && echo "BPM_JAVA_CMD not set.  Set it explicitly, or set JAVA_HOME" >&2 && exit 1
+[ -z "$BPM_JAVA_CMD" ] && export BPM_JAVA_CMD="$JAVA_HOME/bin/java"
+
+export BPM_DEPLOY_USER=jay
+export BPM_DEPLOY_PASSWORD=password
+
+[ -e $BPM_DEPLOY_HOME/bpm-deploy-${BPM_DEPLOY_HOST}.rc ] && . $BPM_DEPLOY_HOME/bpm-deploy-${BPM_DEPLOY_HOST}.rc
+[ -e $HOME/.bpm-deploy-${BPM_DEPLOY_HOST}.rc           ] && . $HOME/bpm-deploy-${BPM_DEPLOY_HOST}.rc

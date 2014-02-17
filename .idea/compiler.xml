@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac" />
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="?*.properties" />
+      <entry name="?*.xml" />
+      <entry name="?*.gif" />
+      <entry name="?*.png" />
+      <entry name="?*.jpeg" />
+      <entry name="?*.jpg" />
+      <entry name="?*.html" />
+      <entry name="?*.dtd" />
+      <entry name="?*.tld" />
+      <entry name="?*.ftl" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="bids-domain" />
+        <module name="bids-jee-app-client" />
+        <module name="bids-jee-app-ear" />
+        <module name="bids-jee-app-ejb" />
+        <module name="bids-jee-app-ejb-api" />
+        <module name="bids-jee-app-web" />
+        <module name="bids-jee-app-web-api" />
+        <module name="bids-rest-client" />
+        <module name="bids-work-handlers" />
+        <module name="demo-domain" />
+        <module name="demo-jee-app-ear" />
+        <module name="demo-jee-app-ejb" />
+        <module name="demo-jee-app-ejb-api" />
+        <module name="demo-jee-app-web" />
+        <module name="demo-jee-app-web-api" />
+        <module name="demo-rest-client" />
+        <module name="demo-work-handlers" />
+        <module name="EndOfDay (1)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bids-ejb" target="1.6" />
+      <module name="bids-jee-app-ejb" target="1.6" />
+      <module name="bids-jee-app-ejb-api" target="1.6" />
+      <module name="bids-jee-app-web" target="1.6" />
+      <module name="bids-jee-app-web-api" target="1.6" />
+      <module name="bids-rest" target="1.5" />
+      <module name="demo-jee-app-ejb" target="1.6" />
+      <module name="demo-jee-app-ejb-api" target="1.6" />
+      <module name="demo-jee-app-web" target="1.6" />
+      <module name="demo-jee-app-web-api" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
+
