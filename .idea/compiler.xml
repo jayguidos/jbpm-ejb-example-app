@@ -51,6 +51,8 @@
       <module name="bids-jee-app-web" target="1.6" />
       <module name="bids-jee-app-web-api" target="1.6" />
       <module name="bids-rest" target="1.5" />
+      <module name="demo-jee-app" target="1.6" />
+      <module name="demo-jee-app-ear" target="1.6" />
       <module name="demo-jee-app-ejb" target="1.6" />
       <module name="demo-jee-app-ejb-api" target="1.6" />
       <module name="demo-jee-app-web" target="1.6" />

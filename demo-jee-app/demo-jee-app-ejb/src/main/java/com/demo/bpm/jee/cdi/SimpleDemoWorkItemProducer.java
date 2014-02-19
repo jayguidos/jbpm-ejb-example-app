@@ -8,7 +8,11 @@ import javax.inject.Inject;
 
 import com.demo.bpm.jee.util.DemoJBPMConfiguration;
 import static com.demo.bpm.shared.DemoBPMConstants.SIMPLE_WORK_ITEM_HANDLER;
+
+import com.demo.bpm.jee.util.TransactionLockInterceptor;
 import com.demo.bpm.work.handlers.implementations.simple.SimpleDemoWorkItemHandlerFactoryImpl;
+import org.drools.core.command.impl.CommandBasedStatefulKnowledgeSession;
+import org.drools.persistence.SingleSessionCommandService;
 import org.jbpm.runtime.manager.api.WorkItemHandlerProducer;
 import org.jbpm.runtime.manager.impl.SingletonRuntimeManager;
 import org.kie.api.runtime.KieSession;
@@ -35,6 +39,13 @@ public class SimpleDemoWorkItemProducer
         SingletonRuntimeManager runtimeManager = getRuntimeManager(params);
         SimpleDemoWorkItemHandlerFactoryImpl factory = new SimpleDemoWorkItemHandlerFactoryImpl(runtimeManager, config.getGlobalLogDir());
         wihMap.put(SIMPLE_WORK_ITEM_HANDLER, factory.makeWorkItem());
+
+        // hack to register interceptor
+        KieSession kieSession = getKieSession(params);
+        SingleSessionCommandService sscs = (SingleSessionCommandService)
+                ((CommandBasedStatefulKnowledgeSession) kieSession).getCommandService();
+
+        sscs.addInterceptor(new TransactionLockInterceptor(kieSession.getEnvironment()));
         return wihMap;
     }
 

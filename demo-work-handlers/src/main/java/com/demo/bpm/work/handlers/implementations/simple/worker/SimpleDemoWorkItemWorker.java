@@ -17,9 +17,10 @@ public class SimpleDemoWorkItemWorker
     public DemoWorkItemHandlerResults doWorkInThread()
             throws InterruptedException
     {
+        System.out.println("##########");
         // this is where you do real work that takes a long time
-        Thread.sleep(2000L);
-
+        Thread.sleep(20000L);
+        System.out.println("@@@@@@@@@@");
         // update the current agenda with results from all our work
         getFactManager().add(new WorkDone("We did some work on thread " + Thread.currentThread().getName() ));
 
