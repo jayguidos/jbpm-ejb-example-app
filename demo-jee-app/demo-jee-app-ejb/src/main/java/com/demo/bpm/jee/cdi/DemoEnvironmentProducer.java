@@ -16,6 +16,7 @@ import javax.persistence.PersistenceUnit;
 
 import org.jbpm.kie.services.api.IdentityProvider;
 import org.jbpm.kie.services.api.Kjar;
+import org.jbpm.kie.services.cdi.producer.UserGroupInfoProducer;
 import org.jbpm.kie.services.impl.KModuleDeploymentService;
 import org.jbpm.runtime.manager.impl.cdi.InjectableRegisterableItemsFactory;
 import org.jbpm.services.task.identity.DefaultUserInfo;
@@ -36,7 +37,7 @@ public class DemoEnvironmentProducer
 
     @Inject
     @Selectable
-    private UserGroupCallback userGroupCallback;
+    private UserGroupInfoProducer userGroupCallback;
 
     @Inject
     private BeanManager beanManager;
@@ -55,7 +56,7 @@ public class DemoEnvironmentProducer
     @Produces
     public UserInfo produceDefaultUserInfoForHumanTaskService()
     {
-        return new DefaultUserInfo(null);
+        return userGroupCallback.produceUserInfo();
     }
 
     @Produces
@@ -80,7 +81,7 @@ public class DemoEnvironmentProducer
     @Produces
     public UserGroupCallback produceSelectedUserGroupCalback()
     {
-        return userGroupCallback;
+        return userGroupCallback.produceCallback();
     }
 
     @Produces
@@ -110,7 +111,7 @@ public class DemoEnvironmentProducer
         RuntimeEnvironment environment = RuntimeEnvironmentBuilder.Factory.get()
                 .newDefaultBuilder()
                 .entityManagerFactory(emf)
-                .userGroupCallback(userGroupCallback)
+                .userGroupCallback(userGroupCallback.produceCallback())
                 .registerableItemsFactory(InjectableRegisterableItemsFactory.getFactory(beanManager, null))
                 .get();
         return environment;
